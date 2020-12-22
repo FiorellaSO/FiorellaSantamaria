@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiorella Santamaria</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body onload="start()">
+    <div class="container">
+      <div class="subir" onclick="goTop()">
+        <i class="fas fa-arrow-circle-up"></i>
+      </div>
+      <header class="header">
+        <h1>Fiorella Santamaria</h1>
+        <ul>
+          <li onclick="scrollX(0)">
+            <img src="imagenes/icono sobre mi.png" alt="" />
+            <h3>Sobre mi</h3>
+          </li>
+          <li onclick="scrollX(1)">
+            <img src="imagenes/icono portafolio.png" alt="" />
+            <h3>Portafolio</h3>
+          </li>
+          <li onclick="scrollX(2)">
+            <img src="imagenes/icono blog.png" alt="" />
+            <h3>Blog</h3>
+          </li>
+          <li onclick="scrollX(3)">
+            <img src="imagenes/icono contactame.png" alt="" />
+            <h3>Contáctame</h3>
+          </li>
+        </ul>
+      </header>
+      <body>
+        <div class="portada">
+          <h2>
+            "La fotografía no puede cambiar la realidad pero si puede
+            mostrarla".
+          </h2>
+          <h3>-Fred Mc Cullin</h3>
+        </div>
+        <h2 class="subtitle">Conóceme</h2>
+        <div class="conoceme">
+          <img src="imagenes/foto perfil.jpeg" alt="" />
+          <div>
+            <h4>Nombre: Evelyn Fiorella Santamaria Ocampo</h4>
+            <h4>Edad: 20 años</h4>
+            <h4>Profesión: Ciencias de la Comunicación</h4>
+            <h4>Universidad: UTP - Sexto Ciclo</h4>
+            <h4>
+              Sobre mi: Me gusta mostrar a las personas lo que va más alla de
+              una "simple" fotografía y hacerles ver lo que ellos a simple vista
+              no pueden.
+            </h4>
+          </div>
+        </div>
+        <h2 class="subtitle">Portafolio</h2>
+        <div class="portafolio">
+          <ul>
+            <li onclick="bw()">Black & white</li>
+            <li onclick="animals()">Animals</li>
+            <li onclick="natural()">Natural</li>
+            <li onclick="places()">Places</li>
+          </ul>
+          <div id="portafolio-imagenes" class="portafolio-imagenes"></div>
+        </div>
+        <h2 class="subtitle">Blog</h2>
+        <div class="blog">
+          <div class="blog-card">
+            <img src="imagenes/regla-de-los-tercios.jpg" alt="" />
+            <h3>Regla de los tercios</h3>
+            <p>
+              Consiste en dividir la imagen, mentalmente, en 9 partes iguales
+              (mediante 2 líneas paralelas horizontales y otras 2 verticales) y,
+              a continuación, colocar el sujeto en algún punto de intersección
+              de las líneas.
+            </p>
+          </div>
+          <div class="blog-card">
+            <img src="imagenes/nuevos angulos.png" alt="" />
+            <h3>Explorar nuevos angulos</h3>
+            <p>
+              Experimenta la fotografía disparando con tu cámara desde ángulos
+              atrevidos y poco usuales. Por ejemplo, hazte una foto a ti mismo
+              en el retrovisor del coche o captura la imagen de algún edificio
+              histórico reflejada en un charco de agua.
+            </p>
+          </div>
+          <div class="blog-card">
+            <img src="imagenes/flash en el exterior.png" alt="" />
+            <h3>EL FLASH EN EL EXTERIOR</h3>
+            <p>
+              Para retratos, utiliza el flash en el exterior. Aunque haga un día
+              especialmente soleado, el flash ayuda a prevenir las zonas de
+              sombra que ocupan la cara de la persona por llevar por ejemplo
+              gorro o algo que proyecte sombra o porque el sol esté encima o
+              detrás de la persona fotografiada.
+            </p>
+          </div>
+          <div class="blog-card">
+            <img src="imagenes/dispara en raw.jpg" alt="" />
+            <h3>DISPARA EN RAW</h3>
+            <p>
+              Permite, habiendo capturado una foto correcta desde el principio,
+              que puedas lograr en el revelado una mucho mejor. Realizar una
+              foto en JPG produce una foto final en la que no tendríamos más
+              margen de modificación.
+            </p>
+          </div>
+          <div class="blog-card">
+            <img src="imagenes/consigue foto nitida.png" alt="" />
+            <h3>CONSIGUE UNA FOTO NÍTIDA</h3>
+            <p>
+              Para lograr una foto correcta debes procurar que tu motivo no
+              salga movido (salvo que lo hagas de forma intencionada) y que esté
+              bien enfocado, aunque desenfoques todo lo demás.
+            </p>
+          </div>
+        </div>
+      </body>
+      <footer>
+        <h2 class="subtitle">Contáctame</h2>
+        <div class="contactame">
+          <ul>
+            <li>
+              <i class="fab fa-facebook-square"></i>
+              <h5>
+                Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"
+                  >Fiorella SO</a
+                >
+              </h5>
+            </li>
+            <li>
+              <i class="fas fa-at"></i>
+              <h5>
+                Gmail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"
+                  >fiorellasantamaria2700@gmail.com</a
+                >
+              </h5>
+            </li>
+            <li>
+              <i class="fab fa-linkedin"></i>
+              <h5>
+                Linkedin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"
+                  >Evelyn Fiorella Santamarìa</a
+                >
+              </h5>
+            </li>
+          </ul>
+        </div>
+        <h2 class="subtitle">Te pareció interesante la fotografia?</h2>
+        <div class="pregunta" id="pregunta">
+          <button onclick="si()" id="pregunta-btn">Si</button>
+          <button onclick="no()" id="pregunta-btn">No</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap");
+body {
+  margin: 0;
+}
+/* header */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgb(72, 150, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(72, 150, 232, 1) 32%,
+    rgba(241, 125, 205, 1) 100%
+  );
+}
+.header h1 {
+  text-align: center;
+  align-self: center;
+  color: #e9dac9;
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  margin-right: 200px;
+}
+.header ul {
+  align-self: flex-end;
+  display: flex;
+  margin-left: 155px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header ul li {
+  padding: 20px;
+  list-style: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  cursor: pointer;
+}
+.header ul li:hover {
+  background: rgb(230, 251, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(32, 36, 29, 0.233) 100%,
+    rgba(165, 193, 232, 1) 100%
+  );
+}
+.header ul li:hover h3 {
+  color: black;
+}
+.header ul li img {
+  max-height: 50px;
+  align-self: center;
+}
+.header ul li h3 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Nunito", sans-serif;
+}
+
+/* portada */
+
+.portada {
+  background: url("imagenes/fondo\ frase.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+  display: grid;
+  grid-template-rows: 8fr 1fr;
+}
+.portada h2 {
+  text-align: center;
+  align-self: center;
+  font-family: monospace;
+  color: hsl(219, 70%, 96%);
+}
+.portada h3 {
+  text-align: end;
+  align-self: center;
+  font-family: "Courier New", Courier, monospace;
+  margin-right: 10px;
+  color: #fff;
+}
+.subtitle {
+  text-align: center;
+  font-family: monospace;
+  padding: 1em;
+}
+/* conoceme */
+.conoceme {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+  width: 50%;
+  align-items: center;
+  margin-left: 25%;
+  padding: 1.25rem;
+  border-radius: 6px;
+  color: #4a4a4a;
+  background: rgb(75, 252, 206);
+  background: linear-gradient(
+    90deg,
+    rgba(75, 252, 206, 1) 30%,
+    rgba(0, 125, 255, 1) 100%
+  );
+}
+.conoceme img {
+  height: 300px;
+  width: 250px;
+  border-radius: 50%;
+  padding: 1em;
+  box-shadow: 0 0.5em 1em 1px rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+.conoceme div {
+  padding: 1em;
+}
+.conoceme h4 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* portafolio */
+.portafolio ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  background: rgb(75, 252, 206);
+  background: linear-gradient(
+    90deg,
+    rgba(75, 252, 206, 1) 30%,
+    rgba(0, 255, 119, 1) 100%
+  );
+}
+.portafolio ul li {
+  padding: 2em;
+  justify-content: center;
+  text-align: center;
+}
+.portafolio ul li:hover {
+  background: rgb(72, 150, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(72, 150, 232, 1) 32%,
+    rgba(241, 125, 205, 1) 100%
+  );
+  color: #fff;
+  cursor: pointer;
+}
+.portafolio-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgb(137, 245, 167);
+  background: linear-gradient(
+    90deg,
+    rgba(137, 245, 167, 1) 8%,
+    rgba(249, 255, 210, 1) 55%
+  );
+}
+.portafolio-imagenes img {
+  margin: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  -webkit-box-shadow: -1px 0px 11px 6px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: -1px 0px 11px 6px rgba(0, 0, 0, 0.28);
+  box-shadow: -1px 0px 11px 6px rgba(0, 0, 0, 0.28);
+}
+/* blog */
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgb(75, 252, 206);
+  background: linear-gradient(
+    90deg,
+    rgba(75, 252, 206, 1) 30%,
+    rgba(0, 125, 255, 1) 100%
+  );
+}
+.blog-card {
+  margin: 2em;
+  width: 25%;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.466);
+}
+.blog-card img {
+  height: 200px;
+  max-width: 90%;
+}
+.blog-card h3 {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+.blog-card p {
+  font-family: monospace;
+  padding: 1em;
+}
+/* contactame */
+.contactame {
+  display: flex;
+  justify-content: center;
+}
+.contactame ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.contactame ul li {
+  display: flex;
+  flex-direction: row;
+}
+.contactame ul li h5 {
+  text-align: center;
+  align-self: center;
+}
+.contactame ul li h5 a {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgba(0, 0, 255, 0.678);
+}
+.contactame ul li h5 a:hover {
+  color: aqua;
+}
+.contactame ul li i {
+  font-size: 35px;
+  padding: 10px;
+  color: blue;
+}
+
+/* pregunta */
+.pregunta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 200px;
+  font-family: monospace;
+  background: rgb(75, 252, 206);
+  background: linear-gradient(
+    90deg,
+    rgba(75, 252, 206, 1) 30%,
+    rgba(0, 125, 255, 1) 100%
+  );
+  padding-top: 2em;
+}
+.pregunta button {
+  padding: 1em;
+  margin: 1em;
+  border: none;
+  background-color: aquamarine;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+  border-radius: 6px;
+  height: 40px;
+}
+.pregunta button:hover {
+  background-color: chartreuse;
+  color: #fff;
+}
+.pregunta input {
+  border: 1px solid rgb(31, 120, 172);
+  border-radius: 5px;
+  padding: 5px;
+  height: 12px;
+}
+.pregunta img {
+  height: 105px;
+}
+.mensaje {
+  font-size: 25px;
+}
+
+/* subir */
+.subir {
+  position: fixed;
+  top: 90%;
+  left: 93%;
+  background-color: khaki;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-family: "Courier New", Courier, monospace;
+  background: rgb(75, 252, 206);
+  background: linear-gradient(
+    90deg,
+    rgba(75, 252, 206, 1) 30%,
+    rgba(0, 125, 255, 1) 100%
+  );
+  border: 4px solid rgba(212, 196, 196, 0.671);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+.subir i {
+  font-size: 28px;
+}
+.subir:hover {
+  cursor: pointer;
+}
